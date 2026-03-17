@@ -1,0 +1,30 @@
+{
+  "name": "freesiksha-lms",
+  "version": "1.0.0",
+  "description": "Production-ready Freesiksha LMS - MERN Stack",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "echo 'Add tests' && exit 0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/freesiksha-lms.git"
+  },
+  "keywords": [
+    "lms",
+    "mern",
+    "education",
+    "saas"
+  ],
+  "author": "BLACKBOXAI",
+  "license": "MIT"
+}
